@@ -1,0 +1,358 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+:root {
+  --main-color: #e3e8e4;
+  --primary-color: #363636;
+  --main-font: "Playfair Display SC", serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  font-family: var(--main-font);
+  font-size: 18px;
+}
+
+nav .logo {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+ul li {
+  display: inline;
+  margin-left: 70px;
+}
+
+ul li a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+.btn {
+  padding: 10px 20px;
+  background: #363636;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: normal;
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 5rem;
+}
+
+header .content {
+  margin-left: 6rem;
+}
+header h1 {
+  font-size: 4rem;
+  font-family: var(--main-font);
+  font-weight: bold;
+  line-height: 5rem;
+  margin-bottom: 25px;
+}
+
+span {
+  color: rgb(180, 180, 180);
+}
+
+header p {
+  font-size: 20px;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+header .learn {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.img-container {
+  width: 500px;
+  height: 500px;
+  background: var(--main-color);
+  border-radius: 100%;
+}
+
+.img-container img {
+  width: 400px;
+  height: 500px;
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
+
+.review {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.review div {
+  margin-left: 6rem;
+  color: #363636;
+}
+
+.review div h1 {
+  font-size: 60px;
+}
+.review div p {
+  font-size: 25px;
+}
+
+.product-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 15%;
+  margin-bottom: 10%;
+}
+
+.product-container h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.shop-catagory {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.content-container {
+  width: 400px;
+  height: 500px;
+  background: #363636;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.product .img-layer {
+  background: var(--main-color);
+  border-top-left-radius: 200px;
+  border-top-right-radius: 200px;
+  padding: 20px;
+}
+
+.product .img-layer .img {
+  width: 200px;
+  height: 200px;
+}
+
+.product .img-layer .img-1 {
+  background: url(Images/daniil-silantev-1P6AnKDw6S8-unsplash-removebg-preview.png);
+  background-size: cover;
+  background-position: center;
+}
+.product .img-layer .img-2 {
+  background: url(Images/bruno-emmanuelle--MUoHL1XULM-unsplash-removebg-preview.png);
+  background-size: cover;
+  background-position: center;
+}
+.product .img-layer .img-3 {
+  background: url(Images/scott-webb-eD853mTbBA0-unsplash-removebg-preview.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.product .product-content {
+  background: #363636;
+  color: #e3e8e4;
+  padding: 34px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.product .product-content .content-name {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btns .btnn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 20px;
+  font-size: 5rem;
+}
+
+/* why us */
+.why-us {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10rem;
+  text-align: center;
+}
+
+.why-us .img-layer {
+  width: 400px;
+  height: 400px;
+  background: var(--main-color);
+  border-radius: 100%;
+}
+
+.why-us .img-layer .img {
+  width: 400px;
+  height: 400px;
+  background: url(Images/scott-webb-eD853mTbBA0-unsplash-removebg-preview.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
+
+.card {
+  width: 200px;
+  height: 150px;
+  padding: 20px;
+  margin-top: 40px;
+  border-radius: 5px;
+}
+
+.card.card-fill {
+  background: #e3e8e490;
+  position: relative;
+}
+
+.card.card.card-fill .star {
+  width: 10px;
+  height: 10px;
+  padding: 15px;
+  border-radius: 100%;
+  background: var(--primary-color);
+  position: absolute;
+  top: -15px;
+  left: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  color: #fff;
+}
+
+.card h1 {
+  color: black;
+  font-family: sans-serif;
+  font-size: 17px;
+}
+
+.card p {
+  color: #999999;
+  font-family: sans-serif;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+/* Features */
+.features {
+  margin-top: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.main-headings {
+  font-size: 4rem;
+  font-family: var(--main-font);
+  color: #0000004f;
+  margin-bottom: 20px;
+}
+
+.main-headings span {
+  color: #000;
+}
+
+.primary-headings {
+  max-width: 500px;
+  font-family: sans-serif;
+}
+
+.features .img-containerss {
+  width: 300px;
+  height: 350px;
+  background: var(--main-color);
+  border-top-left-radius: 200px;
+  border-top-right-radius: 200px;
+}
+
+.features .img-containerss img {
+  width: 350px;
+  height: 450px;
+}
+
+.footer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(39, 39, 39);
+  color: #fff;
+}
+
+.footer .c {
+  padding: 8rem;
+  font-family: var(--primary-font);
+}
+
+.footer .c h1 {
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.footer .c p {
+  margin-bottom: 20px;
+}
+
+.footer .c p a {
+  color: #fff;
+}
